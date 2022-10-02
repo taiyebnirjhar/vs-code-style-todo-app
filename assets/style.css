@@ -1,0 +1,81 @@
+/* "Fira Code, Operator Mono", */
+/* 181818 */
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #eeedde;
+}
+
+header {
+  background-color: #000000;
+}
+section {
+  background-color: #0f1123;
+}
+aside {
+  background-color: #100f0f;
+  /* height: calc(100vh - 5rem); */
+}
+main {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+#container {
+  width: 700px;
+  height: auto;
+}
+#top {
+  /* width: calc(100vw - 5rem); */
+  background-color: #000000;
+}
+.cell {
+  background-color: #141e27;
+}
+
+.search {
+  transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.number {
+  color: white;
+  opacity: 30%;
+  margin: 1rem;
+}
+.title {
+  color: white;
+}
+.tag {
+  color: #ff5555;
+  opacity: 75%;
+}
+.list {
+  color: #ff5555;
+  margin-left: 2.5rem;
+}
+.task {
+  color: white;
+}
+.id {
+  color: #50fa7b;
+}
+
+.red {
+  background-color: #ff5555;
+}
+.yellow {
+  background-color: #f1fa8c;
+}
+.text-yellow {
+  color: #f1fa8c;
+}
+.green {
+  background-color: #50fa7b;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css-->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body class="subpixel-antialiased w-full h-full">
+    <section class="mx-auto my-10" id="container">
+      <header>
+        <div class="opacity-90 flex flex-row justify-between px-2 py-2">
+          <div id="circle" class="flex flex-row gap-3 p-2">
+            <div class="w-4 h-4 rounded-full red text-center"></div>
+            <div class="w-4 h-4 rounded-full yellow"></div>
+            <div class="w-4 h-4 rounded-full green"></div>
+          </div>
+          <div id="title">
+            <div
+              class="mt-1 px-4 text-white font-medium text-sm opacity-80 tracking-tighter"
+            >
+              todo list - Visual Studio Code
+            </div>
+          </div>
+          <div class="flex flex-row gap-10 mx-4">
+            <div class="mt-1">
+              <i class="text-xs fa-solid fa-bars text-white opacity-80"></i>
+            </div>
+            <div class="mt-1.5">
+              <i class="text-xs fa-solid fa-sort-up text-white opacity-80"></i>
+            </div>
+          </div>
+        </div>
+        <div class="px-3 py-2 flex flex-row gap-5">
+          <div
+            class="text-white font-medium text-sm opacity-50 tracking-tighter"
+          >
+            <p>File</p>
+          </div>
+          <div
+            class="text-white font-medium text-sm opacity-50 tracking-tighter"
+          >
+            <p>Edit</p>
+          </div>
+          <div
+            class="text-white font-medium text-sm opacity-50 tracking-tighter"
+          >
+            <p>Selection</p>
+          </div>
+          <div
+            class="text-white font-medium text-sm opacity-50 tracking-tighter"
+          >
+            <p>View</p>
+          </div>
+          <div
+            class="text-white font-medium text-sm opacity-50 tracking-tighter"
+          >
+            <p>Go</p>
+          </div>
+          <div
+            class="text-white font-medium text-sm opacity-50 tracking-tighter"
+          >
+            <p>Run</p>
+          </div>
+          <div
+            class="text-white font-medium text-sm opacity-50 tracking-tighter"
+          >
+            <p>Terminal</p>
+          </div>
+          <div
+            class="text-white font-medium text-sm opacity-50 tracking-tighter"
+          >
+            <p>Help</p>
+          </div>
+        </div>
+      </header>
+      <section class="flex flex-row h-max">
+        <!-- sidebar -->
+
+        <aside
+          class="text-slate-700 w-14 flex flex-col p-4 py-2 justify-between"
+        >
+          <div class="flex flex-col gap-y-5 py-4">
+            <div class="">
+              <p><i class="fa-regular fa-copy text-2xl"></i></p>
+            </div>
+            <div>
+              <p>
+                <i class="fa-solid fa-magnifying-glass search text-2xl"></i>
+              </p>
+            </div>
+            <div>
+              <p><i class="fa-solid fa-sliders text-2xl"></i></p>
+            </div>
+            <div>
+              <p><i class="fa-solid fa-bug text-2xl"></i></p>
+            </div>
+            <div>
+              <p><i class="fa-brands fa-octopus-deploy text-2xl"></i></p>
+            </div>
+          </div>
+          <div class="py-4 flex flex-col gap-y-5">
+            <div>
+              <p><i class="fa-regular fa-circle-user text-2xl"></i></p>
+            </div>
+            <div>
+              <p><i class="fa-solid fa-gear text-2xl"></i></p>
+            </div>
+          </div>
+        </aside>
+        <!-- sidebar ends-->
+
+        <!-- main  -->
+        <main class="">
+          <div id="top" class="flex flex-row justify-between">
+            <div class="border-t-2 border-red-700 cell py-3 px-4 flex flex-row">
+              <div>
+                <p>
+                  <i class="fa-brands fa-html5 text-red-500"></i>
+                  <span class="text-white opacity-80">todo.html</span>
+                </p>
+              </div>
+              <div>
+                <p class="font-thin ml-6 text-white opacity-60">
+                  <i class="fa-solid fa-xmark"></i>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row py-3 px-6 gap-5 text-white">
+              <div>
+                <p><i class="opacity-80 fa-solid fa-play"></i></p>
+              </div>
+              <div>
+                <p><i class="opacity-80 fa-solid fa-table-columns"></i></p>
+              </div>
+              <div>
+                <p><i class="opacity-80 fa-solid fa-ellipsis"></i></p>
+              </div>
+            </div>
+          </div>
+          <div id="bottom" class="px-5 py-2">
+            <div>
+              <p>
+                <i class="fa-brands fa-html5 text-red-500"></i>
+                <span class="text-white opacity-80 italic text-xs"
+                  >todo.html >
+                  <span class="text-white font-normal"> todo</span></span
+                >
+              </p>
+            </div>
+            <div class="font-medium">
+              <ul class="pt-5">
+                <span class="number">1 </span>
+                <span class="tag" id="Header"> </span>
+                <span class="title">To Do List</span>
+                <span class="tag" id="HeaderEnds"> </span>
+              </ul>
+              <ul class="">
+                <span class="number">2 </span>
+              </ul>
+              <ul class="">
+                <span class="number">3</span>
+                <span class="tag" id="ul"> </span>
+                <span class="id italic">id<span class="tag"> =</span></span>
+                <span class="text-yellow">"listItem"></span>
+                <div>
+                  <span class="number">4</span>
+                  <span class="tag list" id="li"></span>
+                  <span class="task">Home Work</span>
+                  <span class="tag" id="liEnds"></span>
+                </div>
+                <div>
+                  <span class="number">5</span>
+                  <span class="tag list" id="li"></span>
+                  <span class="task">Class Work</span>
+                  <span class="tag" id="liEnds"></span>
+                </div>
+                <div>
+                  <span class="number">6</span>
+                  <span class="tag list" id="li"></span>
+                  <span class="task">Assignments</span>
+                  <span class="tag" id="liEnds"></span>
+                </div>
+
+                <span class="number">7</span>
+                <span class="tag" id="ulEnds"> </span>
+              </ul>
+              <span class="number inline">8</span>
+              <ul>
+                <span class="number">9</span>
+
+                <span class="tag" id="button"></span>
+
+                <span class="title" id="addItem">Add Item + </span>
+
+                <span class="tag" id="buttonEnds"></span>
+              </ul>
+            </div>
+          </div>
+        </main>
+        <!-- main  ends-->
+      </section>
+    </section>
+    <!-- scripts -->
+    <script src="./assets/main.js"></script>
+  </body>
+</html>

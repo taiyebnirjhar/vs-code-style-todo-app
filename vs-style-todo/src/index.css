@@ -7,6 +7,8 @@
 body {
   font-family: "Fira Code", monospace;
   background-color: #eeedde;
+  height: 100vh;
+  width: auto;
 }
 
 header {
@@ -15,14 +17,10 @@ header {
 section {
   background-color: #0f1123;
 }
-aside {
+/* aside {
   background-color: #100f0f;
-  /* height: calc(100vh - 5rem); */
-}
-main {
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
-}
+  /* height: calc(100vh - 5rem); }*/
+
 input[type="text"],
 textarea {
   background-color: #0f1123;
@@ -41,6 +39,18 @@ input:focus {
   /* width: calc(100vw - 5rem); */
   background-color: #000000;
 }
+#bottom {
+  background-color: #282a36;
+  height: 92.5%;
+}
+.App {
+  height: 80vh;
+}
+
+.main {
+  width: -webkit-fill-available;
+}
+
 .cell {
   background-color: #141e27;
 }
@@ -59,13 +69,13 @@ input:focus {
   opacity: 30%;
   margin: 1rem;
 }
-.title {
+/* .title {
   color: white;
 }
 .tag {
   color: #ff5555;
   opacity: 75%;
-}
+} */
 .list {
   color: #ff5555;
   margin-left: 2.5rem;
